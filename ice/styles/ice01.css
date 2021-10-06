@@ -1,0 +1,37 @@
+body {
+    background-color: pink;
+    margin: 0 100px 0 100px;
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: arial;
+}
+h1:hover{
+    color:black;
+}
+
+
+#top-quote {
+    color: white;
+    text-align: center;
+}
+
+#list {
+    font-family: "arial black";
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    width: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h6 {
+    text-align: center;
+}
