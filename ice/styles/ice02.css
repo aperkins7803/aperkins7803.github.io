@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+
+#title {
+    width: 100%;
+}
+
+section {
+    background-color: rgb(100, 100, 100);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px;
+}
+
+section img {
+    width: 200px;
+    border: 10px solid rgb(75, 75, 75);
+    border-radius: 200px;
+    margin: 0 auto;
+}
