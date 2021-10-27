@@ -1,0 +1,44 @@
+.clocks {
+    color: purple;
+    font-size: 100px;
+}
+#one {
+    color: red;
+    font-size: 20px;
+}
+#two {
+    color: orange;
+    font-size: 30px;
+}
+#three {
+    color: yellow;
+    font-size: 40px;
+}
+#four {
+    color: green;
+    font-size: 50px;
+}
+#five {
+    color: blue;
+    font-size: 60px;
+}
+#six {
+    color: purple;
+    font-size: 70px;
+}
+#seven {
+    color: darksalmon;
+    font-size: 80px;
+}
+#eight {
+    color: seagreen;
+    font-size: 90px;
+}
+#nine {
+    color: blanchedalmond;
+    font-size: 100px;
+}
+#ten {
+    color: brown;
+    font-size: 110px;
+}
