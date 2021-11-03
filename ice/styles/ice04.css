@@ -56,21 +56,23 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 .second button {
-    background-color: rgb(70, 87, 247);
-    color: white;
-    width: 100px;
-    height: 45px;
     margin: auto;
     border-radius: 5px;
+    border: 2px solid gray;
     margin-bottom: 15px;
+    padding: 2px;
 }
 .second h3 {
     text-align: center;
     margin: auto;
+    padding: 15px 40px;
+    color: white;
+    background-color: rgb(70, 87, 247);
+    border-radius: 5px;
 }
 .third {
     background-color: white;
-    height: 300px;
+    height: 350px;
     width: 400px;
     display: grid;
     text-align: center;
@@ -102,11 +104,29 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 .third button {
-    background-color: rgb(70, 87, 247);
-    color: white;
-    width: 100px;
-    height: 45px;
     margin: auto;
     border-radius: 5px;
+    border: 2px solid gray;
     margin-bottom: 15px;
+    padding: 2px;
+}
+.third h3 {
+    text-align: center;
+    margin: auto;
+    padding: 15px 40px;
+    color: white;
+    background-color: rgb(70, 87, 247);
+    border-radius: 5px;
+}
+.third .line {
+    background-color: lightgray;
+    height: 2px;
+    margin: 10px;
+}
+.third a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(70, 87, 247);
+    margin: 0 auto;
+    font-weight: bold;
 }
