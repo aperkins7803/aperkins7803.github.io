@@ -19,6 +19,7 @@ header {
     padding-top: 5px;
 }
 nav a {
+    font-family: 'Rock Salt', Arial, Helvetica, sans-serif;
     text-align: center;
     color: #e4ecd5;
     text-decoration: none;
@@ -48,6 +49,101 @@ nav {
     text-shadow: 3px 3px black;
     font-size: 60px;
 }
+#content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 100px;
+    margin: 100px 0;
+}
+.writing {
+    margin: auto;
+}
+p {
+    text-align: center;
+    line-height: 1.5em;
+}
+.button h1{
+    background-color: #144266;
+    color: #fce072;
+    border-radius: 5px;
+    margin: auto;
+    padding: 3px 10px;
+    width: 225px;
+}
+.button h1:hover {
+    background-color: #78c5d7;
+    color: #144266;
+}
+.image {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 700px;
+    height: 450px;
+    margin: auto;
+}
+.image .difficulty h1 {
+    background-color: #144266;
+    color: #e4ecd5;
+    font-size: 20px;
+    text-align: center;
+}
+.image img {
+    min-width: 700px;
+    height: 450px;
+    object-fit: cover;
+    margin: auto;
+    grid-column: 1/-1;
+}
+.writing.one {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.image.one {
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+.image.one img {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}
+.image.one .difficulty {
+    grid-column: 4/-1;
+    grid-row: 1/2;
+}
+.image.two {
+    grid-column: 1/3;
+    grid-row: 2/3
+}
+.image.two img {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}
+.image.two .difficulty {
+    grid-column: 1/3;
+    grid-row: 1/2
+}
+.writing.two {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.writing.three {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.image.three {
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+.image.three img {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}
+.image.three .difficulty {
+    grid-column: 4/-1;
+    grid-row: 1/2;
+}
 footer {
     background-color: #144266;
     padding: 25px 50px;
@@ -75,4 +171,33 @@ footer h3 a:hover {
 footer .social img {
     padding-top: 15px;
     display: inline;
+}
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #content {
+        display: block
+    }
+    .image img {
+        min-width: 400px;
+        max-height: 200px;
+        object-fit: cover;
+    }
+    .image {
+        width: 400px;
+        height: 200px;
+        margin: 20px auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
 }
