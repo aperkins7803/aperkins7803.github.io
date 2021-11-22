@@ -4,8 +4,16 @@ body {
     max-width: 100%;
     max-height: 100%;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: Handlee, Arial;
+}
+p {
+    font-family: Quicksand, Helvetica, sans-serif;
+    text-align: left;
+}
 a {
     text-decoration: none;
+    font-family: Handlee, Arial;
 }
 header {
     display: grid;
@@ -168,13 +176,13 @@ hr {
     grid-row: -2/-1;
     grid-column: 1/-1;
     text-align: left;
-    margin: 20px auto 0 150px;
+    margin: 20px auto 0 50px;
 }
 .post-top .comments {
     grid-row: -2/-1;
     grid-column: 2/3;
     text-align: right;
-    margin: 20px 150px 0 auto;
+    margin: 20px 50px 0 auto;
 }
 .post-top .likes i,
 .post-top .likes h3,
@@ -201,12 +209,68 @@ hr {
     font-size: 20px;
 }
 .post-middle .like-button {
-    text-align: right;
-    margin-right: 100px;
-}
+    text-align: center;}
 .post-middle .comment-button {
+    text-align: center;
+}
+.post-bottom {
+    display: grid;
+    grid-template-columns: 100px 100px 1fr 100px 1fr;
+}
+.comment, .reply {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr;
+}
+.comment-box {
+    background-color: #363e28;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    grid-column: 2/-1;
+    margin-top: 25px;
+}
+.comment-box h5 {
+    color: #c2c5aa;
+    font-size: 20px;
+    margin: 15px;
+    margin-bottom: 0;
+    padding: 0;
     text-align: left;
-    margin-left: 50px;
+}
+.comment-box p {
+    color: #c2c5aa;
+    margin: 15px;
+    margin-top: 0;
+    padding: 0;
+    font-size: 17px;
+}
+.post-bottom h6 {
+    margin: 4px 0 0 10px;
+    padding: 0;
+    text-align: left;
+}
+.reply {
+    grid-column: 2/5;
+}
+#post-bottom {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 1fr;
+    padding: 10px;
+    height: 100px;
+    align-items: center;
+    justify-items: center;
+}
+.comment-bar {
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+    padding-left: 15px;
+    width: 90%;
+    height: 20px;
+    justify-self: left;
+    align-self: center;
 }
 footer {
     background-color: #363e28;
