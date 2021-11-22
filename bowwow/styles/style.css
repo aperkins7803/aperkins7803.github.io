@@ -252,7 +252,7 @@ hr {
 .reply {
     grid-column: 2/5;
 }
-#post-bottom {
+#post1-bottom, #post2-bottom {
     grid-column: 1/-1;
     display: grid;
     grid-template-columns: 100px 1fr;
