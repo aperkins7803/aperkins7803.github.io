@@ -9,7 +9,7 @@ a {
 }
 header {
     display: grid;
-    grid-template-columns: 100px 100px 250px 1fr;
+    grid-template-columns: 100px 60px 250px 1fr;
     align-items: center;
     justify-items: center;
     max-height: 60px;
@@ -124,6 +124,89 @@ hr {
 }
 #post-now a:hover {
     text-decoration: underline;
+}
+.post {
+    background-color: #c2c5aa;
+    width: 90%;
+    margin: 50px auto;
+    border-radius: 20px;
+}
+.post-top {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: 50px 30px 5px 300px 60px;
+}
+.post .profile-pic .name,
+.post .profile-pic img {
+    display: inline-block;
+}
+.post .profile-pic {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    justify-self: left;
+}
+.post .name {
+    text-align: left;
+    margin-left: 10px;
+}
+.post .name h1 {
+    font-size: 25px;
+}
+.post .name h4 {
+    font-size: 13px;
+    margin-top: -20px;
+}
+.post .post-content {
+    grid-row: 4/5;
+    grid-column: 1/-1;
+}
+.post .post-content {
+    max-height: 300px;
+    max-width: 90%;
+}
+.post-top .likes {
+    grid-row: -2/-1;
+    grid-column: 1/-1;
+    text-align: left;
+    margin: 20px auto 0 150px;
+}
+.post-top .comments {
+    grid-row: -2/-1;
+    grid-column: 2/3;
+    text-align: right;
+    margin: 20px 150px 0 auto;
+}
+.post-top .likes i,
+.post-top .likes h3,
+.post-top .comments i,
+.post-top .comments h3 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 15px;
+}
+.post-middle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.post-middle .like-button i,
+.post-middle .like-button h3,
+.post-middle .comment-button i,
+.post-middle .comment-button h3 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    color: #d37222;
+    font-size: 20px;
+}
+.post-middle .like-button {
+    text-align: right;
+    margin-right: 100px;
+}
+.post-middle .comment-button {
+    text-align: left;
+    margin-left: 50px;
 }
 footer {
     background-color: #363e28;
