@@ -9,12 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/site-plan.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/your-page.css">
+    
 </head>
 <body>
     <header>
         <a href='index.html' id='logo-link'>
             <img src="images/logo-color.svg" alt="Bow-Wow Logo">
         </a>
+        <i class="material-icons" id='search'>search</i>
         <form>
             <input type='text' placeholder='Search' class='search-bar' name='search-bar'>
         </form>
@@ -22,12 +25,12 @@
             <a href='index.html'>Home</a>
             <a href='#'>Friends</a>
             <a href='log-in.html'>Log In</a>
-            <a href='your-page.html'>
+            <a href='your-page.html' id='profile-link'>
                 <div class='profile-pic'>
                     <img src="images/profile-pic-one.svg" alt="Profile Picture">
                 </div>
-                Your Page
             </a>
+            <a href='your-page.html'>Your Page</a>
         </nav>
     </header>
     <div id='content'>
@@ -65,16 +68,18 @@
                         </a>
                     </li>
                 </ul>
-            </section>>
+            </section>
         </div>
         <main>
             <div id='account-box'>
-                <img src="images/ruby-picture.jpg" alt="">
+                <div class='background'>
+                    <img id='dog' src="images/ruby-picture.jpg" alt="">
+                </div>
                 <div class='profile-pic'>
                     <img src="images/profile-pic-one.svg" alt="Profile Picture">
                 </div>
-                <h1>Dog Name</h1>
-                <h2>Dog Breed</h2>
+                <h1>Ruby</h1>
+                <h2>Yellow Lab</h2>
             </div>
             <section id='post-now'>
                 <div class='profile-pic'>
@@ -106,7 +111,25 @@
                         <h1>User 1</h1>
                         <h4>date</h4>
                     </div>
-                    <img class='post-content' src="images/ruby-bubbles.jpg" alt="Post Image">
+                    <div class='slideshow-container' class='post-content'>
+                        <div class='mySlides fade'>
+                            <img class='post-content' src="images/ruby-bubbles.jpg" alt="Post Image">
+                        </div>
+                        <div class='mySlides fade'>
+                            <img class='post-content' src="images/ruby-friend.jpg" alt="Post Image">
+                        </div>
+                        <div class='mySlides fade'>
+                            <img class='post-content' src="images/ruby-picture.jpg" alt="Post Image">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <br>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
                     <div class='likes'>
                         <i class="material-icons">thumb_up</i>
                         <h3>Likes</h3>
@@ -225,5 +248,35 @@
         <a href='#'>Contact Us</a>
         <a href='#'>Support Us!</a>
     </footer>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
 </body>
 </html>
