@@ -1,0 +1,54 @@
+body {
+    background-color: #c2c5aa;
+}
+hr {
+    margin: 0 auto;
+}
+#login-box {
+    background-color: white;
+    border-radius: 20px;
+    width: 50%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-rows: 40px 50px 40px 50px 80px 30px 1px 80px 65px 1px 80px;
+}
+.text-box {
+    margin: 0 50px;
+}
+button {
+    margin: 0 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+.log-in {
+    margin-top: 30px;
+    background-color: #c2c5aa;
+}
+.google {
+    margin: 15px 50px;
+    background-color: #db4a39;
+    color: white;
+}
+.facebook {
+    margin-bottom: 15px;
+    background-color: #3b5998;
+    color: white;
+}
+.sign-up {
+    background-color: #d37222;
+    margin: 15px 50px;
+    color: white;
+}
+.forgot-password {
+    font-size: 13px;
+    margin-top: auto;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+}
+h4 {
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-left: 50px;
+    text-align: left;
+}
