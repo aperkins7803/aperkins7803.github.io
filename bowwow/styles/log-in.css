@@ -15,11 +15,17 @@ hr {
     display: grid;
     overflow: hidden;
     grid-template-columns: 275px 1fr;
-    grid-template-rows: 40px 50px 40px 50px 80px 30px 70px 1px 80px;
+    grid-template-rows: 40px 50px 40px 50px 80px 30px 80px 1px 80px;
     column-gap: 50px;
 }
+.forgot {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
 .alt-login {
-    margin: 10px auto;
+    margin: 15px auto;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -76,12 +82,18 @@ button {
 .sign-up:hover {
     background-color: #914e18;
 }
-.forgot-password {
+.forgot-password, .forgot-username {
     font-size: 13px;
     margin-top: auto;
     margin-bottom: 5px;
     font-family: sans-serif;
     color: rgb(83, 83, 255);
+}
+.forgot-password {
+    text-align: left;
+}
+.forgot-username {
+    text-align: right;
 }
 h4 {
     font-size: 15px;
