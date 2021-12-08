@@ -14,37 +14,55 @@ hr {
 }
 .text-box {
     margin: 0 50px;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(228, 228, 228);
+    padding-left: 15px;
 }
 button {
     margin: 0 50px;
     border: none;
     cursor: pointer;
     font-size: 17px;
+    border-radius: 7px;
 }
 .log-in {
     margin-top: 30px;
     background-color: #c2c5aa;
+}
+.log-in:hover {
+    background-color: #818371;
 }
 .google {
     margin: 15px 50px;
     background-color: #db4a39;
     color: white;
 }
+.google:hover {
+    background-color: #8b2f25;
+}
 .facebook {
     margin-bottom: 15px;
     background-color: #3b5998;
     color: white;
+}
+.facebook:hover {
+    background-color: #253861;
 }
 .sign-up {
     background-color: #d37222;
     margin: 15px 50px;
     color: white;
 }
+.sign-up:hover {
+    background-color: #914e18;
+}
 .forgot-password {
     font-size: 13px;
     margin-top: auto;
     margin-bottom: 5px;
     font-family: sans-serif;
+    color: rgb(83, 83, 255);
 }
 h4 {
     font-size: 15px;
