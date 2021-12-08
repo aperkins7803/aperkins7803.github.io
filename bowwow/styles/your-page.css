@@ -147,3 +147,21 @@ header .profile-pic img,
 .post .profile-pic img {
   height: 80px;
 }
+.comment-bar {
+  border-radius: 20px;
+  border: none;
+  padding: 5px;
+  padding-left: 15px;
+  width: 90%;
+  height: 30px;
+  justify-self: left;
+  align-self: center;
+}
+.post-bar {
+  border-radius: 20px;
+  border: none;
+  padding: 5px;
+  padding-left: 15px;
+  width: 90%;
+  height: 60px;
+}
