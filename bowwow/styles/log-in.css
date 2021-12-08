@@ -7,10 +7,18 @@ hr {
 #login-box {
     background-color: white;
     border-radius: 20px;
-    width: 50%;
+    width: 60%;
     margin: 50px auto;
     display: grid;
+    overflow: hidden;
+    grid-template-columns: 300px 1fr;
     grid-template-rows: 40px 50px 40px 50px 80px 30px 1px 80px 65px 1px 80px;
+}
+form img {
+    grid-row: 1/-1;
+    height: 100%;
+    object-fit: cover;
+    width: 300px
 }
 .text-box {
     margin: 0 50px;
