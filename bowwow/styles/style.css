@@ -112,6 +112,15 @@ hr {
     grid-column: 2/-1;
     padding: 10px;
 }
+.side-nav ul li a {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    grid-gap: 5px;
+}
+.side-nav ul li a i {
+    text-align: left;
+    margin: auto;
+}
 .post-bar {
     border-radius: 20px;
     border: none;
