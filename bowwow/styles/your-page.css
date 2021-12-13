@@ -91,6 +91,7 @@
 body {
   width: 100vw;
   margin-right: 0;
+  overflow-x: hidden;
 }
 .slideshow-container {
   width: 70%;
