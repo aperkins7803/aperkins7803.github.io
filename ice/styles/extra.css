@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(230, 230, 230);
+    font-family: 'Roboto', sans-serif;
+}
+#card {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 50px 50px 100px 1fr 50px;
+    grid-template-rows: 60px 400px 50px;
+    width: 400px;
+    margin: 25px auto;
+    align-items: center;
+    justify-items: center;
+}
+.content {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+
+}
+.content img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+img {
+    height: 40px;
+}
+h1 {
+    grid-column: 2/4;
+    color: rgb(122, 122, 122);
+    font-size: 17px;
+    justify-self: left;
+}
+h2 {
+    color: rgb(216, 216, 216);
+    font-size: 15px;
+    justify-self: right;
+    text-align: right;
+    font-weight: lighter;
+}
+.material-icons {
+    color: rgb(179, 179, 179);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#more {
+    margin-right: -15px;
+}
+#comment, #heart i {
+    font-weight: lighter;
+}
+#comment, #heart {
+    color: rgb(179, 179, 179);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    justify-self: left;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px
+}
+h3 {
+    font-size: 14px;
+}
+#heart {
+    grid-column: -2/-1;
+    justify-self: right;
+}
+#heart i {
+    margin-left: 5px;
+    margin-right: 10px;
+}
