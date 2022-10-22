@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+    max-height: 100%;
+}
+
+.flag {
+    height: 500px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.stripe1, .stripe5 {
+    background-color: #5BCEFA;
+}
+
+.stripe2, .stripe4 {
+    background-color: #F5A9B8;
+}
+
+.stripe3 {
+    background-color: #FFFFFF;
+}
